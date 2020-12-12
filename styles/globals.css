@@ -6,11 +6,82 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.d-flex {
+  display: flex;
+}
+.s-btw {
+  justify-content: space-between;
+  align-items: center;
+}
+.text-white {
+  color: #ffffff;
 }
 
-* {
-  box-sizing: border-box;
+/* task-container */
+.task-container {
+  border-radius: 8px;
+  background-color: #f7f7f7;
+  padding: 10px 5px;
+}
+.task-container-header {
+  text-align: center;
+  background-color: #27ae60;
+  padding: 1px 0px;
+}
+
+/* task-card */
+.task-card {
+  padding: 10px;
+  background-color: #ffffff !important;
+  border-radius: 5px;
+}
+.task-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.task-name-row {
+  height: 20px;
+  margin-top: 10px;
+}
+.description {
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  font-weight: 500;
+}
+.date {
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+}
+
+/* navbar */
+.navbar {
+  padding: 10px;
+}
+.search-box {
+  height: 50px;
+  width: 80%;
+  border-radius: 34px;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 20px;
+  font-size: 18px;
+}
+.new-task-btn {
+  border: none !important;
+  border-radius: 5px !important;
+  background-color: #27ae60 !important;
+  padding: 8px 8px;
+  color: #ffffff;
+}
+.form-label {
+  font-size: 14px;
+  color: #a9a9a9;
+}
+.form-control {
+  border: none !important;
+  background-color: #f2f2f2 !important;
+}
+svg {
+  height: 300px;
 }

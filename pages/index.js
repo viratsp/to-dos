@@ -1,8 +1,8 @@
 import React from "react";
-import Navbar from "../../components/navbar/Navbar";
-import TaskContainer from "../../components/tasks-container/TaskContainer";
+import Navbar from "../components/navbar/Navbar";
+import TaskContainer from "../components/tasks-container/TaskContainer";
 import { Container, Row, Col } from "react-bootstrap";
-import PieChartComponent from "../../components/Charts/PieChart";
+import PieChartComponent from "../components/Charts/PieChart";
 function Home() {
   return (
     <div>

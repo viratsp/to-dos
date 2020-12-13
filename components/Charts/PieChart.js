@@ -23,15 +23,57 @@ function PieChartComponent() {
       <p>Your Task trends this week</p>
       <PieChart
         data={[
-          { title: "One", value: todo_data.length, color: "yellow" },
+          { title: "One", value: todo_data.length, color: "rgb(246, 185, 2)" },
           {
             title: "Two",
             value: inProgressData.length,
-            color: "green",
+            color: "#28a745",
           },
-          { title: "Three", value: done_data.length, color: "blue" },
+          { title: "Three", value: done_data.length, color: "#007bff" },
         ]}
       />
+      <div
+        className="d-flex"
+        style={{ alignItems: "center", justifyContent: "center" }}
+      >
+        <div
+          style={{
+            height: "16px",
+            width: "16px",
+            borderRadius: "50%",
+            backgroundColor: "rgb(246, 185, 2)",
+          }}
+        ></div>
+        <span className="ml-2">To-do : {todo_data.length}</span>
+      </div>
+      <div
+        className="d-flex"
+        style={{ alignItems: "center", justifyContent: "center" }}
+      >
+        <div
+          style={{
+            height: "16px",
+            width: "16px",
+            borderRadius: "50%",
+            backgroundColor: "#28a745",
+          }}
+        ></div>
+        <span className="ml-2">In-Progress : {inProgressData.length}</span>
+      </div>
+      <div
+        className="d-flex"
+        style={{ alignItems: "center", justifyContent: "center" }}
+      >
+        <div
+          style={{
+            height: "16px",
+            width: "16px",
+            borderRadius: "50%",
+            backgroundColor: "#007bff",
+          }}
+        ></div>
+        <span className="ml-2">Done : {done_data.length}</span>
+      </div>
     </div>
   );
 }

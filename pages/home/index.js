@@ -9,16 +9,16 @@ function Home() {
       <Navbar />
       <Container fluid>
         <Row>
-          <Col>
+          <Col sm="3">
             <PieChartComponent />
           </Col>
-          <Col>
+          <Col sm="3">
             <TaskContainer branch="to-do" />
           </Col>
-          <Col>
+          <Col sm="3">
             <TaskContainer branch="in-progress" />
           </Col>
-          <Col>
+          <Col sm="3">
             <TaskContainer branch="done" />
           </Col>
         </Row>
